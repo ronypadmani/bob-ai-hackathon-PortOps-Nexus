@@ -5,13 +5,15 @@ team:
   name: "PortOps Nexus"
   track: "AI"
   lead:
-    name: "Alex Sterling"
-    email: "alex.sterling@ibm.com"
+    name: "Dhairya Isotiya"
+    email: "23aiml022@charusat.edu.in"
   members:
-    - name: "Devon Reed"
-      email: "devon.reed@ibm.com"
-    - name: "Maya Lin"
-      email: "maya.lin@ibm.com"
+    - name: "Darshil Kothiya"
+      email: "23it049@charusat.edu.in"
+    - name: "Rony Padmani"
+      email: "23aiml039@charusat.edu.in"
+    - name: "Harsh Dobariya"
+      email: "23it025@charusat.edu.in"
 
 submission:
   title: "Port Operations Copilot — AI & OR-Tools Hotspot Prediction & 72-Hour Planner"

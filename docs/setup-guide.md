@@ -15,7 +15,7 @@ This guide provides step-by-step instructions to install, configure, verify, and
 
 ```bash
 # Clone the repository
-git clone https://github.com/drijesh-ppatel/bob-ai-hackathon-portops-nexus.git
+git clone https://github.com/ronypadmani/bob-ai-hackathon-PortOps-Nexus.git
 cd bob-ai-hackathon-portops-nexus
 
 # Create a clean virtual environment

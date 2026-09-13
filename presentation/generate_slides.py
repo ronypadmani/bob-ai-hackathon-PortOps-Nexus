@@ -64,7 +64,7 @@ def create_presentation_pdf(output_path: Path):
     story.append(Paragraph("AI-Driven Congestion Hotspot Prediction, Prescriptive Google OR-Tools Optimization, & 72-Hour Rolling Operational Planning", subtitle_style))
     story.append(Spacer(1, 20))
     story.append(Paragraph("<b>IBM Bob AI Hackathon 2026</b> | Team PortOps Nexus | Track: AI", body_style))
-    story.append(Paragraph("Alex Sterling (Lead), Devon Reed, Maya Lin", body_style))
+    story.append(Paragraph("Dhairya Isotiya (Lead), Darshil Kothiya, Rony Padmani, Harsh Dobariya", body_style))
     story.append(PageBreak())
 
     # Slide 2: Problem Statement

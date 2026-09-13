@@ -1,6 +1,6 @@
 # Port Operations Copilot — AI & OR-Tools Hotspot Prediction & 72-Hour Planner
 
-[![Validate Submission](https://github.com/drijesh-ppatel/bob-ai-hackathon-portops-nexus/actions/workflows/validate.yml/badge.svg)](https://github.com/drijesh-ppatel/bob-ai-hackathon-portops-nexus/actions/workflows/validate.yml)
+[![Validate Submission](https://github.com/ronypadmani/bob-ai-hackathon-PortOps-Nexus/actions/workflows/validate.yml/badge.svg)](https://github.com/ronypadmani/bob-ai-hackathon-PortOps-Nexus/actions/workflows/validate.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.11-blue.svg)](https://www.python.org/)
 [![Optimization](https://img.shields.io/badge/Solver-Google%20OR--Tools%20CP--SAT-0F62FE.svg)](https://developers.google.com/optimization)
 [![AI Engine](https://img.shields.io/badge/AI%20Copilot-IBM%20Bob%20%26%20watsonx-198038.svg)](https://www.ibm.com/watsonx)
@@ -12,10 +12,11 @@ An intelligent, data-driven, and explainable **Port Operations Decision Support 
 ## 👥 Team & Track
 - **Team Name**: PortOps Nexus
 - **Track**: AI
-- **Team Lead**: Alex Sterling (`alex.sterling@ibm.com`)
+- **Team Lead**: Dhairya Isotiya (`23aiml022@charusat.edu.in`)
 - **Team Members**:
-  - Devon Reed (`devon.reed@ibm.com`)
-  - Maya Lin (`maya.lin@ibm.com`)
+  - Darshil Kothiya (`23it049@charusat.edu.in`)
+  - Rony Padmani (`23aiml039@charusat.edu.in`)
+  - Harsh Dobariya (`23it025@charusat.edu.in`)
 
 ---
 
@@ -100,7 +101,7 @@ graph TD
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone https://github.com/drijesh-ppatel/bob-ai-hackathon-portops-nexus.git
+git clone https://github.com/ronypadmani/bob-ai-hackathon-PortOps-Nexus.git
 cd bob-ai-hackathon-portops-nexus
 
 # Create and activate virtual environment

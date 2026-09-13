@@ -214,7 +214,7 @@ if selected_tab == "📊 Port Executive Overview":
                 "Peak Risk": f"{max_risk}/100",
                 "Status": "CRITICAL RISK" if max_risk >= 75 else ("ELEVATED" if max_risk >= 50 else "OPTIMAL")
             })
-        st.dataframe(pd.DataFrame(term_summary), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(term_summary), width='stretch', hide_index=True)
 
         # Baseline vs Optimized Comparison Bar Chart
         kpi_compare = pd.DataFrame({
@@ -228,7 +228,7 @@ if selected_tab == "📊 Port Executive Overview":
             title="Operational Impact: Baseline vs. Optimized Plan"
         )
         fig_comp.update_layout(height=320, margin=dict(l=10, r=10, t=40, b=10))
-        st.plotly_chart(fig_comp, use_container_width=True)
+        st.plotly_chart(fig_comp, width='stretch')
 
     with col_right:
         st.subheader("⏱️ 72-Hour Congestion Heatmap")
@@ -243,7 +243,7 @@ if selected_tab == "📊 Port Executive Overview":
             title="Hourly Terminal Congestion Risk Index"
         )
         fig_heat.update_layout(height=320, margin=dict(l=10, r=10, t=40, b=10))
-        st.plotly_chart(fig_heat, use_container_width=True)
+        st.plotly_chart(fig_heat, width='stretch')
 
         st.info("💡 **Key Insight**: Terminal T2 experiences an intense arrival surge between Hours 14-30. Proactive rerouting to Terminal T3 prevents severe multi-day queuing.")
 
@@ -267,7 +267,7 @@ elif selected_tab == "🚨 Congestion & Hotspots":
         fig_lines.add_hline(y=75, line_dash="dash", line_color="red", annotation_text="CRITICAL (75+)")
         fig_lines.add_hline(y=50, line_dash="dash", line_color="orange", annotation_text="HIGH RISK (50+)")
         fig_lines.update_layout(height=360, margin=dict(l=10, r=10, t=40, b=10))
-        st.plotly_chart(fig_lines, use_container_width=True)
+        st.plotly_chart(fig_lines, width='stretch')
 
     with col2:
         st.subheader("🎯 Hotspot Diagnostics")
@@ -292,7 +292,7 @@ elif selected_tab == "🚨 Congestion & Hotspots":
         )
         fig_berth_p.add_hline(y=1.0, line_dash="dash", line_color="gray")
         fig_berth_p.update_layout(height=280)
-        st.plotly_chart(fig_berth_p, use_container_width=True)
+        st.plotly_chart(fig_berth_p, width='stretch')
     with c_b:
         fig_crane_p = px.line(
             scored_features_df, x="hour", y="crane_pressure_ratio", color="terminal_id",
@@ -301,7 +301,7 @@ elif selected_tab == "🚨 Congestion & Hotspots":
         )
         fig_crane_p.add_hline(y=1.0, line_dash="dash", line_color="gray")
         fig_crane_p.update_layout(height=280)
-        st.plotly_chart(fig_crane_p, use_container_width=True)
+        st.plotly_chart(fig_crane_p, width='stretch')
 
 # -------------------------------------------------------------
 # TAB 3: BERTH & CRANE OPTIMIZATION
@@ -324,7 +324,7 @@ elif selected_tab == "⚡ Berth & Crane Optimization":
     )
     fig_gantt.update_yaxes(autorange="reversed")
     fig_gantt.update_layout(height=420, margin=dict(l=10, r=10, t=40, b=10))
-    st.plotly_chart(fig_gantt, use_container_width=True)
+    st.plotly_chart(fig_gantt, width='stretch')
 
     c1, c2 = st.columns([1, 1])
     with c1:
@@ -336,7 +336,7 @@ elif selected_tab == "⚡ Berth & Crane Optimization":
             title="Crane Assignment Distribution by Vessel Priority"
         )
         fig_crane_hist.update_layout(height=300)
-        st.plotly_chart(fig_crane_hist, use_container_width=True)
+        st.plotly_chart(fig_crane_hist, width='stretch')
 
     with c2:
         st.subheader("⏱️ Vessel Waiting Time Distribution")
@@ -346,7 +346,7 @@ elif selected_tab == "⚡ Berth & Crane Optimization":
             title="Optimized Wait Time Histogram (Avg: " + str(kpis['optimized']['avg_waiting_time_hours']) + " hrs)"
         )
         fig_wait.update_layout(height=300)
-        st.plotly_chart(fig_wait, use_container_width=True)
+        st.plotly_chart(fig_wait, width='stretch')
 
 # -------------------------------------------------------------
 # TAB 4: 72-HOUR OPERATIONS PLAN
@@ -380,7 +380,7 @@ elif selected_tab == "📋 72-Hour Operations Plan":
             "eta_hour", "assigned_terminal", "assigned_berth", "start_time_hour", "end_time_hour",
             "waiting_time_hours", "cranes_assigned", "routing_status", "action_required"
         ]],
-        use_container_width=True,
+        width='stretch',
         hide_index=True
     )
 
@@ -480,7 +480,7 @@ elif selected_tab == "🧪 Scenario & What-If Studio":
                     "vessel_id", "vessel_name", "eta_hour", "assigned_berth", "start_time_hour",
                     "end_time_hour", "waiting_time_hours", "cranes_assigned", "routing_status"
                 ]].head(10),
-                use_container_width=True,
+                width='stretch',
                 hide_index=True
             )
 
