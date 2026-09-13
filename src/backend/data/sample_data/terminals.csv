@@ -1,0 +1,4 @@
+terminal_id,terminal_name,yard_capacity,current_yard_utilization,max_vessels,alternative_terminal,avg_dwell_time_days,rail_connectivity
+T1,Pier 400 Global Gateway,90000,0.78,4,"T2,T3",4.1,True
+T2,Pier A Harbor Central,65000,0.91,3,"T1,T3",5.8,True
+T3,Long Beach Automation Hub,80000,0.54,3,"T1,T2",3.2,True

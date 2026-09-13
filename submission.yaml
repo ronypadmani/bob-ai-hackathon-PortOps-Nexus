@@ -1,0 +1,27 @@
+# Submission Metadata — IBM Bob AI Hackathon
+# Evaluated automatically by GitHub Action and evaluators
+
+team:
+  name: "PortOps Nexus"
+  track: "AI"
+  lead:
+    name: "Alex Sterling"
+    email: "alex.sterling@ibm.com"
+  members:
+    - name: "Devon Reed"
+      email: "devon.reed@ibm.com"
+    - name: "Maya Lin"
+      email: "maya.lin@ibm.com"
+
+submission:
+  title: "Port Operations Copilot — AI & OR-Tools Hotspot Prediction & 72-Hour Planner"
+  problem_statement: >
+    Port operators manage multi-million dollar container berths and cranes manually with spreadsheets, leading to catastrophic multi-week vessel queues and over $10B in supply chain disruptions. Congestion is identified reactively after vessels are already anchored offshore.
+  solution_summary: >
+    Port Operations Copilot is an intelligent decision-support system that ingests vessel schedules and terminal capacities, predicts congestion hotspots up to 72 hours ahead using ML risk models, optimizes berth and crane allocations via Google OR-Tools CP-SAT, recommends proactive alternate routing, and provides grounded natural language operational assistance via IBM Bob and watsonx.
+  key_features:
+    - "Predictive 72-Hour Congestion Hotspot Forecaster with temporal demand-vs-capacity ML risk scoring"
+    - "Mathematical Berth & Crane Allocation Optimization powered by Google OR-Tools CP-SAT"
+    - "Proactive Alternate Terminal Routing Engine preventing queue buildup before vessel arrival"
+    - "Interactive What-If Scenario Studio for vessel delays, crane breakdowns, and storm disruptions"
+    - "Conversational IBM Bob Copilot with transparent constraint-based decision explainability"

@@ -1,0 +1,61 @@
+name: Validate Submission
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml pytest
+          if [ -f src/requirements.txt ]; then pip install -r src/requirements.txt; fi
+
+      - name: Check required files exist
+        run: |
+          test -f submission.yaml || (echo "Missing submission.yaml" && exit 1)
+          test -f README.md || (echo "Missing README.md" && exit 1)
+          test -f docs/problem-statement.md || (echo "Missing docs/problem-statement.md" && exit 1)
+          test -f docs/solution-overview.md || (echo "Missing docs/solution-overview.md" && exit 1)
+          test -f docs/architecture.md || (echo "Missing docs/architecture.md" && exit 1)
+          test -f docs/setup-guide.md || (echo "Missing docs/setup-guide.md" && exit 1)
+          test -f src/README.md || (echo "Missing src/README.md" && exit 1)
+          test -f src/.env.example || (echo "Missing src/.env.example" && exit 1)
+          test -f demo/demo-video-link.txt || (echo "Missing demo/demo-video-link.txt" && exit 1)
+          test -f demo/live-demo-url.txt || (echo "Missing demo/live-demo-url.txt" && exit 1)
+
+      - name: Validate submission.yaml syntax and required fields
+        run: |
+          python -c "
+          import yaml
+          with open('submission.yaml') as f:
+              data = yaml.safe_load(f)
+          assert 'team' in data, 'Missing team field'
+          assert 'submission' in data, 'Missing submission field'
+          assert data['team']['name'], 'Missing team.name'
+          assert data['team']['track'], 'Missing team.track'
+          assert data['team']['lead']['name'], 'Missing team.lead.name'
+          assert data['team']['lead']['email'], 'Missing team.lead.email'
+          assert data['submission']['title'], 'Missing submission.title'
+          assert data['submission']['problem_statement'], 'Missing submission.problem_statement'
+          assert data['submission']['solution_summary'], 'Missing submission.solution_summary'
+          assert len(data['submission']['key_features']) >= 3, 'Must have at least 3 key features'
+          print('submission.yaml is valid!')
+          "
+
+      - name: Run Test Suite
+        run: |
+          pytest src/tests/ -v

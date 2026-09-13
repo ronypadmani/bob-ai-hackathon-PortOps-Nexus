@@ -1,0 +1,41 @@
+vessel_id,vessel_name,arrival_time,estimated_departure,cargo_volume,containers,vessel_size,draft,length_overall,preferred_terminal,priority,destination,service_duration
+V101,Ever Forward,1.3,42.7,16775.0,3308,ULCV,16.0,400.0,T1,LOW,Automotive Assembly Line,39.4
+V102,Maersk Mc-Kinney,1.9,41.8,19073.0,3187,ULCV,16.0,400.0,T2,HIGH,Automotive Assembly Line,37.9
+V103,CMA CGM Palais,3.3,47.0,22545.0,3502,ULCV,16.0,400.0,T3,LOW,Local Metro DC,41.7
+V104,MSC Isabella,3.3,16.6,2315.0,950,FEEDER,10.5,210.0,T1,NORMAL,Automotive Assembly Line,11.3
+V105,OOCL Hong Kong,6.6,45.4,23892.0,3095,ULCV,16.0,400.0,T1,HIGH,Inland Intermodal Rail,36.8
+V106,COSCO Shipping Universe,10.0,36.0,13859.0,2016,POST_PANAMAX,14.5,350.0,T2,HIGH,Inland Intermodal Rail,24.0
+V107,Hapag-Lloyd Al Jmeliyah,10.0,25.9,8428.0,1164,PANAMAX,13.0,294.0,T3,NORMAL,Automotive Assembly Line,13.9
+V108,ONE Integrity,11.6,35.8,14258.0,1862,POST_PANAMAX,14.5,350.0,T1,NORMAL,Transshipment Hub,22.2
+V109,Yang Ming Wellhead,12.0,32.9,6778.0,1589,PANAMAX,13.0,294.0,T2,LOW,Inland Intermodal Rail,18.9
+V110,HMM Algeciras,14.0,29.5,7619.0,1132,PANAMAX,13.0,294.0,T2,NORMAL,Inland Intermodal Rail,13.5
+V111,Pacific Voyager,15.3,36.9,5460.0,1646,PANAMAX,13.0,294.0,T2,LOW,Transshipment Hub,19.6
+V112,Ever Golden,15.5,33.2,5002.0,1317,PANAMAX,13.0,294.0,T2,NORMAL,Transshipment Hub,15.7
+V113,Madrid Maersk,16.5,62.4,17484.0,3691,ULCV,16.0,400.0,T2,LOW,Inland Intermodal Rail,43.9
+V114,MSC Gulsun,17.3,41.9,10757.0,1895,POST_PANAMAX,14.5,350.0,T2,NORMAL,Transshipment Hub,22.6
+V115,CMA CGM Rivoli,17.3,32.8,7072.0,1135,PANAMAX,13.0,294.0,T2,HIGH,Local Metro DC,13.5
+V116,APL Fullerton,17.8,29.0,2056.0,769,FEEDER,10.5,210.0,T2,CRITICAL,Automotive Assembly Line,9.2
+V117,ZIM Antwerp,19.2,40.9,5863.0,1655,PANAMAX,13.0,294.0,T2,NORMAL,Automotive Assembly Line,19.7
+V118,Wan Hai 805,19.3,45.0,14504.0,1989,POST_PANAMAX,14.5,350.0,T2,NORMAL,Automotive Assembly Line,23.7
+V119,Hyundai Singapore,19.5,46.0,9709.0,2058,POST_PANAMAX,14.5,350.0,T2,NORMAL,Inland Intermodal Rail,24.5
+V120,Ever Fortune,20.6,38.5,5183.0,1333,PANAMAX,13.0,294.0,T2,HIGH,Automotive Assembly Line,15.9
+V121,Munich Maersk,21.8,48.0,12763.0,2032,POST_PANAMAX,14.5,350.0,T2,LOW,Automotive Assembly Line,24.2
+V122,MSC Oscar,22.2,67.1,19457.0,3606,ULCV,16.0,400.0,T1,LOW,Transshipment Hub,42.9
+V123,CMA CGM Tenere,23.4,41.1,6089.0,1319,PANAMAX,13.0,294.0,T2,HIGH,Inland Intermodal Rail,15.7
+V124,COSCO Faith,25.0,61.9,21172.0,2929,ULCV,16.0,400.0,T2,LOW,Automotive Assembly Line,34.9
+V125,ONE Apus,28.1,56.7,9202.0,2238,POST_PANAMAX,14.5,350.0,T2,HIGH,Local Metro DC,26.6
+V126,Ever Given,29.0,59.7,9197.0,2409,POST_PANAMAX,14.5,350.0,T2,NORMAL,Automotive Assembly Line,28.7
+V127,HMM Dublin,33.0,49.6,4686.0,1223,PANAMAX,13.0,294.0,T1,CRITICAL,Automotive Assembly Line,14.6
+V128,Maersk Honam,33.4,61.6,10369.0,2202,POST_PANAMAX,14.5,350.0,T2,HIGH,Automotive Assembly Line,26.2
+V129,MSC Zoe,35.8,76.9,18976.0,3288,ULCV,16.0,400.0,T1,NORMAL,Automotive Assembly Line,39.1
+V130,OOCL Germany,36.4,83.5,22616.0,3787,ULCV,16.0,400.0,T1,NORMAL,Local Metro DC,45.1
+V131,CMA CGM Jacques Saade,43.3,75.8,9623.0,2563,POST_PANAMAX,14.5,350.0,T2,NORMAL,Local Metro DC,30.5
+V132,MSC Mina,45.0,57.2,3175.0,853,FEEDER,10.5,210.0,T2,LOW,Transshipment Hub,10.2
+V133,COSCO Galaxy,45.4,70.0,10682.0,1898,POST_PANAMAX,14.5,350.0,T2,LOW,Automotive Assembly Line,22.6
+V134,ONE Triumph,52.9,84.3,12991.0,2472,POST_PANAMAX,14.5,350.0,T3,LOW,Automotive Assembly Line,29.4
+V135,Hapag-Lloyd Berlin Express,53.2,66.4,1753.0,939,FEEDER,10.5,210.0,T1,CRITICAL,Transshipment Hub,11.2
+V136,ZIM Kingston,55.4,69.1,2377.0,983,FEEDER,10.5,210.0,T2,NORMAL,Automotive Assembly Line,11.7
+V137,APL Southampton,58.3,69.3,3103.0,760,FEEDER,10.5,210.0,T1,HIGH,Automotive Assembly Line,9.0
+V138,Ever Ace,60.2,88.3,14254.0,2191,POST_PANAMAX,14.5,350.0,T2,HIGH,Automotive Assembly Line,26.1
+V139,MSC Samar,63.6,109.4,20565.0,3682,ULCV,16.0,400.0,T1,HIGH,Local Metro DC,43.8
+V140,Maersk Eindhoven,65.3,75.0,1937.0,650,FEEDER,10.5,210.0,T3,NORMAL,Inland Intermodal Rail,7.7
